@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To-Do List</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="variaveis.css">
+	<link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+
+</head>
+<body class="">
+
+	<div class="box-principal">
+
+		<div class="btn-mode"></div>
+
+		<div class="box-header">
+			<h3>
+				<i class='bx bx-list-ul'></i>
+				To-do List
+			</h3>
+			<span id="count-list"></span>
+		</div>
+		<div class="box-conteudo">
+			<ul>
+				<li class="item-lista">
+					<input type="checkbox" id="list-1">
+					<label for="list-1">Teste</label>
+					<button class="delete"><i class='bx bx-trash-alt'></i></button>
+				</li>
+			</ul>
+		</div>
+		<div class="box-input">
+			<input type="text" id="input-list" maxlength="50" placeholder="Digite...">
+			<button id="button-envio-list"><i class='bx bx-plus'></i></button>
+			<div class="alert-erro">Erro, campo vázio</div>
+		</div>
+	</div>
+
+<!--  Script -->
+<script src="script.js"></script>
+<script>
+	
+	const btnMode = document.querySelector('.btn-mode');
+	btnMode.onclick = () =>
+	{
+		document.querySelector('body').classList.toggle('dark')
+	}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+:root
+{
+	--branco: #fff;
+	--preto: #222;
+	--roxo: rgb(161,118,201);
+	--fonte: #777;
+	--fonte-dois: #ddd;
+	--shadow: rgba(0, 0, 0, .1);
+	--erro-input: #ab0000;
+}
+body.dark
+{
+	--branco: #222;
+	--preto: #fff;
+	--fonte: #ddd;
+	--shadow: rgba(255, 255, 255, .2);
+}
